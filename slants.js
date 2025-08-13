@@ -41,9 +41,9 @@ function drawCircles(stillColour){
     for (let i = 0; i < 1000; i += 100) {
     // Draw a circle.
 
-    fill(255);
-    stroke(0);
-    ellipse(i,100,100,100);
+        fill(255);
+        stroke(0);
+        ellipse(i,i,100,100);
 
   }
     
