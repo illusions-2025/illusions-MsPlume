@@ -1,8 +1,9 @@
 
-let colourMode;
+let colourMode; //variable to create the radio button
 
-//this function is called once at the start of a sketch
+//this function is called once at the start of a sketch, always called and only onece and it is automatic
 function setup() {
+
     //create a drawing surface on to the web page
     //this drawing surface is 1000 X 600
     canvas = createCanvas(1000,600);
@@ -15,7 +16,7 @@ function setup() {
     //illusion mode. place in top left
     
     colourMode = createRadio();
-    colourMode.option("2","black");
+    colourMode.option("2","black");//the first one is values of the radiobuttons
     colourMode.option("1","white");
     colourMode.option("0","illusion");
 
@@ -28,7 +29,7 @@ function setup() {
     //to view the position as the centre of the shape
     //thus we need to shift the rec/ellipse modes to
     //refer to centre
-    rectMode(CENTER);
+    rectMode(CENTER);//by default it will be the corner, isntead of centere being the coordinate how the shape is defined
     ellipseMode(CENTER);
 
 }
@@ -36,7 +37,7 @@ function setup() {
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawCircles(stillColour){
-
+    ellipse(100,100,100,100);
 }
 
 //if stillColour is truthy, image will be black or white
@@ -50,10 +51,11 @@ function drawLines(stillColour){
 //to reduce processor load. All examples except reverse-phi can be modified with a noLoop()
 //However, as this code is used for breaking down the illusion, the noLoop() is commented out
 //so that the illusion can be redrawn correctly after user input interaction
+//called 60ties per second automatically by P5, can change the rate 
 function draw() {
-    background(150)
-    c = int(colourMode.value());
+    background(150)//multiple colormodes, grayscale (shades from white255 to balck0 so 150is gray - in the middles)
+    c = int(colourMode.value());//grabs the radiobutton value and turns it into an integer
     drawCircles(c);
     drawLines(c);
-    //noLoop();
+    //noLoop(); -calls it once and is done, if not called then it will continually draw
 }
