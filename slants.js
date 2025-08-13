@@ -43,7 +43,7 @@ function drawCircles(stillColour){
 
         fill(255);
         stroke(0);
-        ellipse(i,i,100,100);
+        ellipse(i,i,i,i);
 
   }
     
