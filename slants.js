@@ -44,7 +44,7 @@ function drawCircles(stillColour){
     let circleWidth = lineWidth/16;
     let x = offset+circleWidth/2; //semicolons keep consistent but not required
     let y = 50; 
-    for(let i = 0, i < 16,i++){
+    for(let i = 0; i < 16; i++){
          stroke(0);
         fill(0);//esc to stop the autocomplete
         ellipse(x+i*circleWidth,y,circleWidth,circleWidth);
