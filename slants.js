@@ -47,7 +47,7 @@ function drawCircles(stillColour){
     for(let i = 0, i < 16,i++){
          stroke(0);
         fill(0);//esc to stop the autocomplete
-        ellipse(x+1*circleWidth,y,circleWidth,circleWidth);
+        ellipse(x+i*circleWidth,y,circleWidth,circleWidth);
 
     }
    
