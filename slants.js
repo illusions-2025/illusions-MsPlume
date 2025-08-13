@@ -40,7 +40,7 @@ function setup() {
 function drawCircles(stillColour){
     
     let offset = 100;
-    let lineWidth - width - (2*offset);
+    let lineWidth = width - (2*offset);
     let circleWidth = lineWidth/16;
     let x = offset+circleWidth/2; //semicolons keep consistent but not required
     let y = 50; 
