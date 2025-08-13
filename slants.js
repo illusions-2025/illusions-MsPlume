@@ -1,4 +1,5 @@
-
+//to save and see - lower left corner github, then go to repository, then prss actions from th main menu to see all workflows and the last webpage will be there
+//shift. and reload to celar the cache
 let colourMode; //variable to create the radio button
 
 //this function is called once at the start of a sketch, always called and only onece and it is automatic
@@ -37,7 +38,15 @@ function setup() {
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawCircles(stillColour){
-    ellipse(100,100,100,100);
+    for (let i = 0; i < 1000; i += 100) {
+    // Draw a circle.
+
+    fill(255);
+    stroke(0);
+    ellipse(i,100,100,100);
+
+  }
+    
 }
 
 //if stillColour is truthy, image will be black or white
