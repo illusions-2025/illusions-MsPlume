@@ -43,29 +43,20 @@ function drawCircles(stillColour){
     let lineWidth = width - (2*offset);
     let circleWidth = lineWidth/16;
     let x = offset+circleWidth/2; //semicolons keep consistent but not required
-    let y = offset + circlewidth; 
+    let y = 50; 
     for(let i = 0; i < 16; i++){
          stroke(0);
         fill(0);//esc to stop the autocomplete
         ellipse(x+i*circleWidth,y,circleWidth,circleWidth);
-        
-    }
 
+    }
+   
     
 }
 
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawLines(stillColour){
-    let offset = 100;
-    let lineWidth = width - (2*offset);
-    let circleWidth = lineWidth/16;
-    let x = offset+circleWidth/2; //semicolons keep consistent but not required
-    let y = 50; 
-    for(let i = 0; i < 16; i++){
-         stroke(0);
-        fill(0);//esc to stop the autocomplete
-        ellipse(x+i*circleWidth,y,circleWidth,circleWidth);
 
 }
 //this function is called once every 60 seconds unless
