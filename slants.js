@@ -38,7 +38,10 @@ function setup() {
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawCircles(stillColour){
-    ellipse(100,100,100,100);
+    let x = 50; //semicolons keep consistent but not required
+    stroke(0);
+    fill(0);//esc to stop the autocomplete
+    ellipse(50,100,30,30);
 }
 
 //if stillColour is truthy, image will be black or white
